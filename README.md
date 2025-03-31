@@ -1,1 +1,0 @@
-# Quick_Commerce_Analytics
