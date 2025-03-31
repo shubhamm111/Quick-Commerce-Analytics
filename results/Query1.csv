@@ -1,0 +1,6 @@
+Order ID,Customer ID,Platform,Delivery Time (Minutes),Product Category,Order Value (INR),Feedback,Service Rating,Delivery Delay,Refund Requested
+ORD000001,CUST2824,JioMart,30,Fruits & Vegetables,382.00,Fast delivery great service,5,No,No
+ORD000002,CUST1409,Blinkit,16,Dairy,279.00,Quick and reliable,5,No,No
+ORD000003,CUST5506,JioMart,25,Beverages,599.00,Items missing from order,2,No,Yes
+ORD000004,CUST5012,JioMart,42,Beverages,946.00,Items missing from order,2,Yes,Yes
+ORD000005,CUST4657,Blinkit,30,Beverages,334.00,Fast delivery great service,5,No,No

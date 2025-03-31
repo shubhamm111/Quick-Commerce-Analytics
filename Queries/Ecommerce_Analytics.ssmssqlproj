@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Ecommerce_Analytics">
+  <Items>
+    <LogicalFolder Name="Connections" Type="2" Sorted="true">
+      <Items>
+        <ConnectionNode Name="LAPTOP-AK5SJ94S:LAPTOP-AK5SJ94S\shubh">
+          <Created>2025-03-31T18:26:58.0075514+05:30</Created>
+          <Type>SQL</Type>
+          <Server>LAPTOP-AK5SJ94S</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB />
+          <LoginTimeout>30</LoginTimeout>
+          <TrustServerCertificate>True</TrustServerCertificate>
+          <HostNameInServerCertificate />
+          <EncryptionOption>True</EncryptionOption>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Queries" Type="0" Sorted="true">
+      <Items>
+        <FileNode Name="Above_Average_Delivery_Time_Product_Wise.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Above_Average_Delivery_Time_Product_Wise.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Average_Delay_Time.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Average_Delay_Time.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Avg_Order_Value_Per_Product.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Avg_Order_Value_Per_Product.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Best_Service_Rating.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Best_Service_Rating.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Consistent_Low_Ratings.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Consistent_Low_Ratings.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Delay_Refund_Relation.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Delay_Refund_Relation.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Delivery_Completed_on_time.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Delivery_Completed_on_time.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Feedbacks_Per_Platform.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Feedbacks_Per_Platform.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Highest_Refund_Customers.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Highest_Refund_Customers.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Highest_Refund_Rate.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Highest_Refund_Rate.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Highest_Revenue.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Highest_Revenue.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Loyal_Customers.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Loyal_Customers.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Master_file.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:LAPTOP-AK5SJ94S:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>LAPTOP-AK5SJ94S</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Master_file.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Most_Common_Negative_Feedback.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Most_Common_Negative_Feedback.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Most_Least_Selling_Products.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Most_Least_Selling_Products.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Net_Promoter_Score.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Net_Promoter_Score.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Platform_ProductCategory Delay.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Platform_ProductCategory Delay.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Reasons_for_Refund.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Reasons_for_Refund.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Refunds_Initiated_based_on_ProductCategory.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Refunds_Initiated_based_on_ProductCategory.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Top_10_Customer_OrderValue.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Top_10_Customer_OrderValue.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Top_and_Bottom_Spending_Customers.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Top_and_Bottom_Spending_Customers.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Top_Customer_Ordercount.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Top_Customer_Ordercount.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Top_Customer_OrderValue.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Top_Customer_OrderValue.sql</FullPath>
+        </FileNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
+      <Items />
+    </LogicalFolder>
+  </Items>
+</SqlWorkbenchSqlProject>

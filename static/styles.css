@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-image: url('/static/ecommerce-background.jpg');
+    background-size: 100% auto;  /* Change from 'contain' to 'cover' */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: White;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.container {
+    flex: 1;
+    width: 80%;
+    margin: auto;}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #00008B;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+select {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 50%;
+}
+
+/* Center dropdown and button */
+#query-container {
+    margin-bottom: 0px;  /* Removed extra space */
+    background-color: #000000;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 50px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Table Styling */
+#query-results {
+        min-height: 60vh; /* Pushes background image down */
+    padding-bottom: 150px;
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0px; /* Removed extra margin */
+    background: white;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    color: black;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+td {
+    background-color: #ffffff;
+}

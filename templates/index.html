@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Query Viewer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Choose an Insight</h2>
+        
+        <div id="query-container">
+            <select id="query">
+                <option value="query1">Sample Record (First 5 rows)</option>
+                <option value="query2">Top 10 Customers by Total Spending across all Platforms</option>
+                <option value="query3">Top Customers by Total Order Value on Each Platform</option>
+                <option value="query4">Highest Ordering Customers on Each Platform</option>
+                <option value="query5">Platform-Wise Analysis of Top & Bottom 10% Spenders</option>
+                <option value="query6">Customers Who Placed Orders on Only One Platform</option>
+                <option value="query7">Customers Generating the Most Refund Requests</option>
+                <option value="query8">Customers with Repeated Low Service Ratings (≤ 3)</option>
+                <option value="query9">Timely Delivery Rate Across Platforms</option>
+                <option value="query10">Platform-Wise Average Delivery Time</option>
+                <option value="query11">Platform-Wise Product Categories with Most Above-Average Delivery Times</option>
+                <option value="query12">Products Exceeding Average Delivery Time per Platform</option>
+                <option value="query13">Frequent Delivery Delays and Refund Patterns Across Platforms</option>
+                <option value="query14">Product Categories experiencing delivery delays</option>
+                <option value="query15">Most and Least Popular Product Categories by Platform</option>
+                <option value="query16">Revenue Trends Across Product Categories on Different Platforms</option>
+                <option value="query17">Average order value for each product category </option>
+                <option value="query18">Most Refund-Prone Product Category & Platform</option>
+                <option value="query19">Platform-wise Analysis of Customer Feedback</option>
+                <option value="query20">Service Rating Breakdown (1★ to 5★) for Each Platform</option>
+                <option value="query21">Most Frequent Negative Feedback on Each Platform</option>
+                <option value="query22">Customer Classification According to Net Promoter Score (NPS)</option>
+                
+            </select>
+            <button onclick="fetchResults()">Submit</button>
+        </div>
+
+        <div id="query-results" style="margin-top: 10px;">  <!-- Reduced space between button and table -->
+            <table id="result-table">
+                <thead>
+                    <tr id="table-header"></tr>
+                </thead>
+                <tbody id="table-body"></tbody>
+            </table>
+        </div>
+    </div>
+    <div class="footer"></div>
+
+
+ <script>
+    function fetchResults() {
+        const query = document.getElementById("query").value;
+
+        fetch("/get_results", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ query: query })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.error) {
+                alert("Error: " + data.error);
+                return;
+            }
+
+            const tableHeader = document.getElementById("table-header");
+            const tableBody = document.getElementById("table-body");
+
+            tableHeader.innerHTML = "";
+            tableBody.innerHTML = "";
+
+            // Create table headers
+            data.columns.forEach(col => {
+                let th = document.createElement("th");
+                th.innerText = col;
+                tableHeader.appendChild(th);
+            });
+
+            // Populate table rows
+            data.rows.forEach(row => {
+                let tr = document.createElement("tr");
+                row.forEach(cell => {
+                    let td = document.createElement("td");
+
+                    // Check if cell is a number
+                    if (typeof cell === "number") {
+                        // If it's a float, round to 2 decimal places
+                        if (cell % 1 !== 0) {
+                            td.innerText = cell.toFixed(2);
+                        } else {
+                            td.innerText = cell; // Keep integer as it is
+                        }
+                    } else {
+                        td.innerText = cell; // Keep text unchanged
+                    }
+
+                    tr.appendChild(td);
+                });
+                tableBody.appendChild(tr);
+            });
+        })
+        .catch(error => console.error("Error fetching results:", error));
+    }
+</script>
+
+
+</body>
+</html>
